@@ -92,15 +92,15 @@ const EditImage = () => {
 
     return (
         <div className="flex flex-col justify-center items-center mt-6">
-            <div className='flex flex-row items-center gap-x-2 mb-2'>
+            <div className='flex flex-row items-center w-[320px] sm:w-[400px] md:w-[600px] gap-x-2 mb-2'>
                 <input
                     type="text"
                     placeholder="Enter text"
                     value={text}
                     onChange={(e) => setText(e.target.value)}
-                    className="pl-3 outline-none border border-gray-300 rounded-sm w-[300px] h-[50px]"
+                    className="pl-3 outline-none border border-gray-300 rounded-sm w-4/5 h-[50px]"
                 />
-                <button onClick={addTextbox} className='p-3 outline-none bg-blue-500 rounded-md border-2 border-blue-600 text-white font-bold'>Add Textbox</button>
+                <button onClick={addTextbox} className='p-3 outline-none w-1/5 bg-blue-500 rounded-md border-2 border-blue-600 text-white font-bold'>Add</button>
             </div>
          
          <div ref={drop} className='relative'>

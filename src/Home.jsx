@@ -68,7 +68,7 @@ function Home() {
             <header className='px-3 py-6 border-b-[1px] w-full border-gray-300'>
                 <p className="text-center w-full text-3xl text-blue-600 font-medium">ImageCanva</p>
             </header>
-            <div className='w-[400px] flex flex-row items-center h-[50px] border-blue-500 border-[1px] rounded-full pl-4 overflow-hidden mt-4'>
+            <div className='w-[320px] sm:w-[400px] md:w-[600px] flex flex-row items-center h-[50px] border-blue-500 border-[1px] rounded-full pl-4 overflow-hidden mt-4'>
                 <input placeholder='search'
                     onChange={(e)=>{setQuery(e.target.value)}}
                     className='outline-none h-full w-4/5 text-xl text-black'/>
@@ -78,7 +78,7 @@ function Home() {
                     Search
                 </button>
             </div>
-            <div className='flex flex-row gap-x-2 my-4'>
+            <div className='flex flex-row w-[320px] sm:w-[600px] md:w-[700px] lg:w-[1000px] lg:overflow-x-hidden overflow-x-scroll gap-x-2 my-4'>
                 {
                     CATEGORIES.map((category, index) => 
                         <div
