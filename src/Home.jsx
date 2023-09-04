@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 const CATEGORIES = [
     'Nature',
     'Sport',
-    'Cricket',
-    'Dog',
-    'Nature',
-    'Sport',
-    'Cricket',
-    'Dog',
-    'Nature',
-    'Sport',
-    'Cricket',
-    'Dog',
+    'Business',
+    'Birds',
+    'Animals',
+    'Planel',
+    'Automobile',
+    'Bikes',
+    'Flowers',
+    'Artistic',
+    'Man',
+    'Electronics',
 ]
 
 function Home() {
