@@ -1,13 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './Home';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import EditImage from './EditImage';
+
+import { DndProvider } from 'react-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+  },
+  {
+    path: "edit-image",
+    element: (<DndProvider backend={HTML5Backend}>
+      <div>
+        <EditImage/>
+      </div>
+    </DndProvider>)
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
